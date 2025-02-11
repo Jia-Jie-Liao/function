@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hoisting 變數提升</h1>
+    <script>
+        // 不管在哪一行使用變數，都視為第一行宣告
+        console.log(x)
+        var x = 10
+        console.log(x)
+        function hoisting() 
+        {
+            console.log(x)
+            var x = 20
+            console.log(x)
+        }
+        hoisting()
+    </script>
+</body>
+</html>
